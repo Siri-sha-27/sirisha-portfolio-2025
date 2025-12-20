@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sirisha Gajula | Data Science Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-container">
+    <div class="logo">SG</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+
+    <!-- LEFT -->
+    <div class="hero-text reveal from-left">
+      <p class="eyebrow">DATA ENGINEERING • ANALYTICS • MACHINE LEARNING</p>
+
+      <h1>Hi, I’m <span class="accent">Sirisha Gajula</span></h1>
+      <h2>Data Science Graduate Student & Data Analytics Engineer</h2>
+
+      <p>
+        I bring over three years of industry experience as a
+        <strong>Custom Software Engineering Analyst at Accenture</strong>,
+        where I worked on enterprise-scale ETL pipelines, reporting workflows,
+        and data validation systems supporting business-critical decision-making.
+      </p>
+
+      <p class="personal-line">
+        My interests lie in data science and analytical problem-solving—designing reliable
+        pipelines, developing interpretable models, and transforming complex data into insights.
+      </p>
+
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:Sgaju8@unh.newhaven.edu">
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a href="https://github.com/Siri-sha-27" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right reveal from-right">
+      <div class="avatar">SG</div>
+
+      <div class="snapshot">
+        <h3>Professional Snapshot</h3>
+        <p><strong>Location:</strong> Connecticut, USA</p>
+        <p><strong>Experience:</strong> 3+ Years (Enterprise ETL)</p>
+        <p><strong>Background:</strong> Accenture – Custom Software Engineering Analyst</p>
+        <p><strong>Focus:</strong> Data Science & Machine Learning</p>
+
+        <div class="tool-tags">
+          <span>Azure</span>
+          <span>SSIS</span>
+          <span>Control-M</span>
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Power BI</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal from-left">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am a Data Science graduate student with a strong industry foundation in data engineering
+      and analytics. At Accenture, I built and supported reliable ETL pipelines, automated workflows,
+      and delivered reporting solutions used by global stakeholders.
+    </p>
+    <p>
+      I enjoy working on analytical problems end-to-end—from data preparation and modeling
+      to evaluation and interpretation—while ensuring solutions are scalable and production-ready.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section dark reveal from-right">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <h3>Custom Software Engineering Analyst — Accenture</h3>
+    <p class="meta">Aug 2021 – Apr 2024</p>
+
+    <ul class="exp-list">
+      <li>Designed and maintained enterprise-scale ETL pipelines using SSIS, SQL Server, and Azure.</li>
+      <li>Automated job scheduling and monitoring workflows using Control-M.</li>
+      <li>Developed internal C#-based data validation utilities to audit raw datasets.</li>
+      <li>Delivered Power BI dashboards and Excel KPI reports for business stakeholders.</li>
+      <li>Translated business requirements into scalable, production-ready data solutions.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS (LANDSCAPE) -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="reveal from-left">Projects</h2>
+
+    <div class="projects-list">
+
+      <!-- Project 1 -->
+      <article class="project-row reveal from-left">
+        <div class="project-image">
+          <img src="eurosat-vit-lora.png" alt="EuroSAT Project">
+        </div>
+        <div class="project-info">
+          <h3>EuroSAT Image Classification (ViT + LoRA)</h3>
+          <p>
+            Implemented a parameter-efficient Vision Transformer fine-tuned with LoRA
+            for satellite image classification, focusing on reducing trainable parameters
+            while maintaining strong accuracy.
+          </p>
+          <div class="project-tags">
+            <span>ViT</span><span>LoRA</span><span>PyTorch</span><span>EuroSAT</span>
+          </div>
+          <a class="github-link" href="https://github.com/Siri-sha-27/EuroSAT-ViT-LoRA.git" target="_blank">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-row reverse reveal from-right">
+        <div class="project-image">
+          <img src="financial-rag-llm.png" alt="Financial RAG">
+        </div>
+        <div class="project-info">
+          <h3>Financial RAG Pipeline using LLMs</h3>
+          <p>
+            Designed and implemented a Retrieval-Augmented Generation system using
+            embeddings, vector search, and prompt engineering to improve factual grounding
+            and reduce hallucinations.
+          </p>
+          <div class="project-tags">
+            <span>RAG</span><span>LLMs</span><span>FAISS</span><span>NLP</span>
+          </div>
+          <a class="github-link" href="https://github.com/Siri-sha-27/financial-rag-project.git" target="_blank">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-row reveal from-left">
+        <div class="project-image">
+          <img src="sales-forecasting-lightgbm.png" alt="Sales Forecasting">
+        </div>
+        <div class="project-info">
+          <h3>Sales Forecasting using LightGBM</h3>
+          <p>
+            Developed a time-series forecasting model using LightGBM with lag features
+            and rolling statistics, demonstrating improved predictive accuracy over baselines.
+          </p>
+          <div class="project-tags">
+            <span>LightGBM</span><span>Time Series</span><span>Feature Engineering</span>
+          </div>
+          <a class="github-link" href="https://github.com/Siri-sha-27/A-Sales-Forecasting-Technique-Using-LightGBM.git" target="_blank">
+            <i class="fa-brands fa-github"></i> View on GitHub
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark reveal from-right">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Sgaju8@unh.newhaven.edu">Sgaju8@unh.newhaven.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200" target="_blank">sirisha-gajula</a></p>
+    <p>GitHub: <a href="https://github.com/Siri-sha-27" target="_blank">github.com/Siri-sha-27</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Sirisha Gajula</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
