@@ -7,8 +7,22 @@
   --border: rgba(34,197,94,.25);
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+/* ===== GLOBAL FIXES (IMPORTANT) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
@@ -17,7 +31,7 @@ body {
   color: var(--text);
 }
 
-/* NAV */
+/* ===== NAV ===== */
 header {
   position: sticky;
   top: 0;
@@ -33,12 +47,17 @@ header {
   align-items: center;
 }
 
-.logo { color: var(--accent); font-weight: 700; }
+.logo {
+  color: var(--accent);
+  font-weight: 700;
+}
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a {
@@ -46,7 +65,7 @@ header {
   text-decoration: none;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
   min-height: calc(100vh - 64px);
   display: flex;
@@ -57,13 +76,24 @@ header {
   display: grid;
   grid-template-columns: 1.4fr 0.6fr;
   gap: 3rem;
+  width: 100%;
+  max-width: 100%;
 }
 
-.eyebrow { color: var(--muted); letter-spacing: .15em; font-size: .75rem; }
+.eyebrow {
+  color: var(--muted);
+  letter-spacing: .15em;
+  font-size: .75rem;
+}
 
-.accent { color: var(--accent); }
+.accent {
+  color: var(--accent);
+}
 
-.personal-line { font-style: italic; color: var(--muted); }
+.personal-line {
+  font-style: italic;
+  color: var(--muted);
+}
 
 .hero-links a {
   margin-right: 1rem;
@@ -71,6 +101,7 @@ header {
   text-decoration: none;
 }
 
+/* ===== HERO RIGHT ===== */
 .hero-right {
   display: flex;
   flex-direction: column;
@@ -96,6 +127,7 @@ header {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 1.2rem;
+  width: 100%;
 }
 
 .tool-tags span {
@@ -107,18 +139,29 @@ header {
   font-size: .75rem;
 }
 
-/* SECTIONS */
-.section { padding: 3.5rem 0; }
-.section.dark { background: #020617; }
+/* ===== SECTIONS ===== */
+.section {
+  padding: 3.5rem 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
-/* EXPERIENCE */
-.exp-list { line-height: 1.7; }
+.section.dark {
+  background: #020617;
+}
 
-/* PROJECTS */
+/* ===== EXPERIENCE ===== */
+.exp-list {
+  line-height: 1.7;
+}
+
+/* ===== PROJECTS (FIXED) ===== */
 .projects-list {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .project-row {
@@ -126,21 +169,31 @@ header {
   grid-template-columns: 1.1fr 1.4fr;
   gap: 2.5rem;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .project-row.reverse {
   grid-template-columns: 1.4fr 1.1fr;
 }
 
+/* CRITICAL FIX: prevent scaled image from overflowing */
+.project-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
 .project-image img {
   width: 100%;
+  max-width: 100%;
   height: 260px;
   object-fit: cover;
-  border-radius: 16px;
+  display: block;
   transition: transform .5s ease, filter .5s ease;
 }
 
-.project-row:hover img {
+.project-row:hover .project-image img {
   transform: scale(1.05);
   filter: brightness(.8);
 }
@@ -165,31 +218,45 @@ header {
   transform: translateX(4px);
 }
 
-/* REVEAL */
+/* ===== REVEAL ANIMATIONS ===== */
 .reveal {
   opacity: 0;
   transition: opacity .6s ease, transform .6s ease;
+  will-change: transform, opacity;
 }
 
-.reveal.from-left { transform: translateX(-40px); }
-.reveal.from-right { transform: translateX(40px); }
+.reveal.from-left {
+  transform: translateX(-40px);
+}
+
+.reveal.from-right {
+  transform: translateX(40px);
+}
 
 .reveal.visible {
   opacity: 1;
   transform: translateX(0);
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 1.2rem;
   border-top: 1px solid var(--border);
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
   .project-row,
-  .project-row.reverse { grid-template-columns: 1fr; }
-  .project-image img { height: 220px; }
+  .project-row.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image img {
+    height: 220px;
+  }
 }
