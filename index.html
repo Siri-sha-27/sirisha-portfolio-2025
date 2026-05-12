@@ -1,416 +1,540 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sirisha Gajula | Data Engineering & Data Science Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sirisha Gajula - Data Engineer, ML Practitioner, and Cloud Architect portfolio." />
+  <title>Sirisha Gajula | Data Engineer</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-<header>
-  <div class="container nav-container">
-    <div class="logo">SG</div>
-
-    <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#experience">Experience</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle theme">
-      <i class="fa-solid fa-moon"></i>
-      <span>Theme</span>
-    </button>
-  </div>
-</header>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="bg-blobs" aria-hidden="true">
-    <span class="blob b1"></span>
-    <span class="blob b2"></span>
-    <span class="blob b3"></span>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true">
+    <span class="mesh mesh-one"></span>
+    <span class="mesh mesh-two"></span>
+    <span class="mesh mesh-three"></span>
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
   </div>
 
-  <div class="container hero-grid">
-    <div class="hero-text reveal from-left">
-      <p class="eyebrow">DATA ENGINEERING • ANALYTICS • MACHINE LEARNING</p>
-
-      <h1>Hi, I’m <span class="accent">Sirisha Gajula</span></h1>
-      <h2>Data Science Graduate Student & Data Analytics Engineer</h2>
-
-      <p>
-        I bring over three years of industry experience as a
-        <strong>Custom Software Engineering Analyst at Accenture</strong>,
-        where I supported enterprise ETL pipelines, reporting workflows,
-        and data validation systems used in business-critical decision-making.
-      </p>
-
-      <p class="personal-line">
-        I’m driven by analytical problem-solving—building reliable pipelines, creating interpretable models,
-        and turning complex data into clear, measurable outcomes.
-      </p>
-
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="mailto:Sgaju8@unh.newhaven.edu">
-          <i class="fa-solid fa-envelope"></i> Email
-        </a>
-        <a href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-right reveal from-right">
-      <div class="avatar">SG</div>
-
-      <div class="snapshot">
-        <div class="snapshot-head">
-          <h3>Professional Snapshot</h3>
-          <span class="pill">Open to Data Engineering</span>
-        </div>
-
-        <div class="snapshot-grid">
-          <div class="snap-item">
-            <p class="snap-k">Location</p>
-            <p class="snap-v">Connecticut, USA</p>
-          </div>
-          <div class="snap-item">
-            <p class="snap-k">Experience</p>
-            <p class="snap-v">3+ Years (Enterprise ETL)</p>
-          </div>
-          <div class="snap-item">
-            <p class="snap-k">Previous Role</p>
-            <p class="snap-v">Accenture • CSE Analyst</p>
-          </div>
-          <div class="snap-item">
-            <p class="snap-k">Focus</p>
-            <p class="snap-v">Data Platforms & ML</p>
-          </div>
-        </div>
-
-        <div class="tool-tags">
-          <span>Azure</span>
-          <span>SSIS</span>
-          <span>Control-M</span>
-          <span>SQL</span>
-          <span>Python</span>
-          <span>Power BI</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section reveal from-left">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I’m a Data Science graduate student with a strong industry foundation in data engineering and analytics.
-      At Accenture, I worked on ETL pipelines, automated operational workflows, and supported reporting systems
-      used by global stakeholders.
-    </p>
-    <p>
-      I enjoy building end-to-end solutions—from ingestion and validation to modeling and dashboards—while keeping
-      systems scalable, maintainable, and production-ready.
-    </p>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section dark reveal from-right">
-  <div class="container">
-    <h2>Experience</h2>
-    <h3>Custom Software Engineering Analyst — Accenture</h3>
-    <p class="meta">Aug 2021 – Aug 2024 • Hyderabad, India</p>
-
-    <ul class="exp-list">
-      <li>Designed and maintained enterprise ETL workflows using SSIS, SQL Server, and Azure for multi-source ingestion and transformation.</li>
-      <li>Automated scheduling, monitoring, and recovery workflows in Control-M to improve reliability and reduce manual operations.</li>
-      <li>Built internal C# validation utilities to test raw data and detect data quality issues earlier in the pipeline.</li>
-      <li>Delivered Power BI dashboards and recurring KPI reports in Excel to support decision-making for business stakeholders.</li>
-      <li>Developed quality solutions aligned to business requirements while meeting time and cost constraints.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section" data-section>
-  <div class="container">
-    <h2 class="reveal from-left">Projects</h2>
-    <p class="muted reveal from-left">
-      Filter by category to quickly view my <strong>Data Engineering</strong> vs <strong>AI/ML</strong> work.
-    </p>
-
-    <!-- ✅ KPI GRID (EXACT 4 cards like screenshot) -->
-    <div class="kpi-grid reveal from-left">
-      <button class="kpi-card is-active" type="button" data-filter="all">
-        <i class="kpi-ic fa-solid fa-layer-group"></i>
-        <div class="kpi-title">Total Projects</div>
-        <div class="kpi-value" id="kpiAll">0</div>
-        <div class="kpi-sub">All categories</div>
-      </button>
-
-      <button class="kpi-card" type="button" data-filter="de">
-        <i class="kpi-ic fa-solid fa-database"></i>
-        <div class="kpi-title">Data Engineering</div>
-        <div class="kpi-value" id="kpiDE">0</div>
-        <div class="kpi-sub">Azure • AWS • Pipelines</div>
-      </button>
-
-      <button class="kpi-card" type="button" data-filter="ml">
-        <i class="kpi-ic fa-solid fa-brain"></i>
-        <div class="kpi-title">AI / ML</div>
-        <div class="kpi-value" id="kpiML">0</div>
-        <div class="kpi-sub">CV • Forecasting</div>
-      </button>
-
-      <button class="kpi-card" type="button" data-filter="nlp">
-        <i class="kpi-ic fa-solid fa-comments"></i>
-        <div class="kpi-title">NLP / LLM</div>
-        <div class="kpi-value" id="kpiNLP">0</div>
-        <div class="kpi-sub">RAG • Retrieval</div>
-      </button>
-    </div>
-
-    <!-- ✅ Pills row like screenshot -->
-    <div class="pill-row reveal from-left" role="tablist" aria-label="Project filters">
-      <button class="pill-btn is-active" type="button" data-filter="all">All</button>
-      <button class="pill-btn" type="button" data-filter="de">Data Engineering</button>
-      <button class="pill-btn" type="button" data-filter="ml">AI/ML</button>
-      <button class="pill-btn" type="button" data-filter="nlp">NLP/LLM</button>
-    </div>
-
-    <!-- PROJECT LIST -->
-    <div class="projects-list" id="projectList">
-
-      <!-- DE -->
-      <article class="project-row reveal from-left" data-category="de">
-        <div class="project-image">
-          <!-- inline SVG -->
-          <svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Azure medallion pipeline illustration">
-            <defs>
-              <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#061028"/>
-                <stop offset="1" stop-color="#020617"/>
-              </linearGradient>
-              <linearGradient id="accA" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#22c55e"/>
-                <stop offset="1" stop-color="#16a34a"/>
-              </linearGradient>
-            </defs>
-            <rect width="1200" height="650" rx="28" fill="url(#bgA)"/>
-            <text x="70" y="95" fill="#e5e7eb" font-size="34" font-family="Inter, Arial" font-weight="700">Azure Medallion Data Pipeline</text>
-            <text x="70" y="135" fill="#94a3b8" font-size="18" font-family="Inter, Arial">ADF → ADLS → Databricks → Delta → Synapse → Power BI</text>
-            <g transform="translate(90,230)">
-              <rect x="0" y="0" width="210" height="120" rx="18" fill="#0b1220" stroke="rgba(34,197,94,.35)" stroke-width="2"/>
-              <text x="105" y="55" text-anchor="middle" fill="#e5e7eb" font-size="20" font-family="Inter, Arial" font-weight="700">ADF</text>
-              <text x="105" y="85" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="Inter, Arial">Ingestion</text>
-              <path d="M230,60 L320,60" stroke="url(#accA)" stroke-width="6" stroke-linecap="round"/>
-              <path d="M320,60 l-14,-10 l0,20 z" fill="#22c55e"/>
-              <rect x="340" y="0" width="210" height="120" rx="18" fill="#0b1220" stroke="rgba(34,197,94,.35)" stroke-width="2"/>
-              <text x="445" y="55" text-anchor="middle" fill="#e5e7eb" font-size="20" font-family="Inter, Arial" font-weight="700">ADLS</text>
-              <text x="445" y="85" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="Inter, Arial">Storage</text>
-              <path d="M570,60 L660,60" stroke="url(#accA)" stroke-width="6" stroke-linecap="round"/>
-              <path d="M660,60 l-14,-10 l0,20 z" fill="#22c55e"/>
-              <rect x="680" y="0" width="240" height="120" rx="18" fill="#0b1220" stroke="rgba(34,197,94,.35)" stroke-width="2"/>
-              <text x="800" y="55" text-anchor="middle" fill="#e5e7eb" font-size="20" font-family="Inter, Arial" font-weight="700">Databricks</text>
-              <text x="800" y="85" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="Inter, Arial">PySpark</text>
-            </g>
-          </svg>
-        </div>
-
-        <div class="project-info">
-          <h3>Amazon Prime Movies & TV Shows — Azure Data Engineering Pipeline</h3>
-          <p class="project-year">2026 • Data Engineering</p>
-          <p>
-            Built an end-to-end medallion architecture pipeline (Bronze/Silver/Gold) using Azure Data Factory,
-            Databricks (PySpark), ADLS Gen2, Delta Lake, Synapse serverless SQL, and Power BI for analytics-ready reporting.
-          </p>
-          <div class="project-tags">
-            <span>ADF</span><span>Databricks</span><span>Delta</span><span>Synapse</span><span>Power BI</span>
-          </div>
-          <a class="github-link" href="https://github.com/Siri-sha-27/Azure-End-to-End-ETL-Pipeline--AmzonPrimeData.git" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i> View on GitHub
-          </a>
-        </div>
-      </article>
-
-      <!-- DE -->
-      <article class="project-row reverse reveal from-right" data-category="de">
-        <div class="project-image">
-          <svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SLA monitoring illustration">
-            <defs>
-              <linearGradient id="bgS" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#061028"/>
-                <stop offset="1" stop-color="#020617"/>
-              </linearGradient>
-            </defs>
-            <rect width="1200" height="650" rx="28" fill="url(#bgS)"/>
-            <text x="70" y="95" fill="#e5e7eb" font-size="34" font-family="Inter, Arial" font-weight="700">SLA Freshness & Monitoring</text>
-            <text x="70" y="135" fill="#94a3b8" font-size="18" font-family="Inter, Arial">S3 arrivals • expected windows • Athena impact • alerts</text>
-          </svg>
-        </div>
-
-        <div class="project-info">
-          <h3>SLA Freshness & Business Monitoring Platform</h3>
-          <p class="project-year">2026 • Data Engineering</p>
-          <p>
-            Designed a serverless SLA monitoring system to track data freshness and delivery SLAs, assess business impact using Athena SQL,
-            and surface KPI trends with alerting for critical breaches.
-          </p>
-          <div class="project-tags">
-            <span>AWS</span><span>S3</span><span>Athena</span><span>Python</span><span>Monitoring</span>
-          </div>
-          <a class="github-link" href="https://github.com/Siri-sha-27/Aws-sla-freshness-dashboard.git" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i> View on GitHub
-          </a>
-        </div>
-      </article>
-
-      <!-- ML -->
-      <article class="project-row reveal from-left" data-category="ml">
-        <div class="project-image">
-          <svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EuroSAT ViT LoRA illustration">
-            <rect width="1200" height="650" rx="28" fill="#061028"/>
-            <text x="70" y="110" fill="#e5e7eb" font-size="36" font-family="Inter, Arial" font-weight="800">EuroSAT (ViT + LoRA)</text>
-            <text x="70" y="155" fill="#94a3b8" font-size="18" font-family="Inter, Arial">Parameter-efficient satellite image classification</text>
-          </svg>
-        </div>
-
-        <div class="project-info">
-          <h3>EuroSAT Image Classification (ViT + LoRA)</h3>
-          <p class="project-year">2025 • AI/ML</p>
-          <p>
-            Implemented a parameter-efficient Vision Transformer fine-tuned with LoRA for satellite image classification,
-            balancing accuracy with reduced trainable parameters.
-          </p>
-          <div class="project-tags">
-            <span>ViT</span><span>LoRA</span><span>PyTorch</span><span>EuroSAT</span>
-          </div>
-          <a class="github-link" href="https://github.com/Siri-sha-27/EuroSAT-ViT-LoRA.git" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i> View on GitHub
-          </a>
-        </div>
-      </article>
-
-      <!-- NLP/LLM -->
-      <article class="project-row reverse reveal from-right" data-category="nlp">
-        <div class="project-image">
-          <svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Financial RAG illustration">
-            <rect width="1200" height="650" rx="28" fill="#061028"/>
-            <text x="70" y="110" fill="#e5e7eb" font-size="36" font-family="Inter, Arial" font-weight="800">Financial RAG (LLMs)</text>
-            <text x="70" y="155" fill="#94a3b8" font-size="18" font-family="Inter, Arial">Chunking • embeddings • retrieval • grounded answers</text>
-          </svg>
-        </div>
-
-        <div class="project-info">
-          <h3>Financial RAG Pipeline using LLMs</h3>
-          <p class="project-year">2025 • NLP/LLM</p>
-          <p>
-            Designed and implemented a Retrieval-Augmented Generation system using embeddings and vector search,
-            improving factual grounding and reducing hallucinations.
-          </p>
-          <div class="project-tags">
-            <span>RAG</span><span>LLMs</span><span>FAISS</span><span>NLP</span>
-          </div>
-          <a class="github-link" href="https://github.com/Siri-sha-27/financial-rag-project.git" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i> View on GitHub
-          </a>
-        </div>
-      </article>
-
-      <!-- ML -->
-      <article class="project-row reveal from-left" data-category="ml">
-        <div class="project-image">
-          <svg viewBox="0 0 1200 650" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sales forecasting illustration">
-            <rect width="1200" height="650" rx="28" fill="#061028"/>
-            <text x="70" y="110" fill="#e5e7eb" font-size="36" font-family="Inter, Arial" font-weight="800">Sales Forecasting (LightGBM)</text>
-            <text x="70" y="155" fill="#94a3b8" font-size="18" font-family="Inter, Arial">Time-series features • RMSE evaluation • item-level forecasts</text>
-          </svg>
-        </div>
-
-        <div class="project-info">
-          <h3>Sales Forecasting & Inventory Optimization using LightGBM</h3>
-          <p class="project-year">2025 • AI/ML</p>
-          <p>
-            Built an end-to-end forecasting pipeline from raw transactions to model-ready datasets,
-            engineered lag/rolling features, and selected LightGBM based on lowest RMSE.
-          </p>
-          <div class="project-tags">
-            <span>LightGBM</span><span>Time Series</span><span>Feature Eng</span><span>Python</span>
-          </div>
-          <a class="github-link" href="https://github.com/Siri-sha-27/A-Sales-Forecasting-Technique-Using-LightGBM.git" target="_blank" rel="noreferrer">
-            <i class="fa-brands fa-github"></i> View on GitHub
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section dark reveal from-right">
-  <div class="container">
-    <h2>Contact</h2>
-
-    <div class="contact-card">
-      <p class="contact-text">
-        If you’d like to collaborate, discuss data engineering roles, or talk about my projects — feel free to reach out.
-      </p>
-
-      <div class="contact-actions">
-        <a class="contact-btn" href="mailto:Sgaju8@unh.newhaven.edu">
-          <i class="fa-solid fa-envelope"></i> Email
-        </a>
-
-        <a class="contact-btn" href="https://www.linkedin.com/in/sirisha-gajula-b6635b200" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-
-        <a class="contact-btn" href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-left">
-      <div class="footer-logo">SG</div>
-      <p class="footer-muted">© <span id="year"></span> Sirisha Gajula</p>
-    </div>
-
-    <div class="footer-right">
-      <a href="mailto:Sgaju8@unh.newhaven.edu" class="footer-link">
-        <i class="fa-solid fa-envelope"></i> Sgaju8@unh.newhaven.edu
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="Sirisha Gajula home">
+        <span class="brand-mark">SG</span>
+        <span class="brand-text">Sirisha Gajula</span>
       </a>
-      <a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200" target="_blank" rel="noreferrer" class="footer-link">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer" class="footer-link">
-        <i class="fa-brands fa-github"></i> GitHub
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="assets/GajulaSirishaCVp.pdf" target="_blank" rel="noreferrer">
+        Resume
       </a>
     </div>
-  </div>
-</footer>
+  </header>
 
-<script src="script.js"></script>
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-aos="fade-up">
+          <p class="eyebrow">West Haven, CT / Data Platforms / ML Systems</p>
+          <h1>Sirisha Gajula</h1>
+          <h2>I build as a <span id="typedRole">Data Engineer</span></h2>
+          <p class="hero-lede">
+            Data Engineer with 3+ years of experience building reliable pipelines, cloud-native workflows, data quality systems, and analytics-ready platforms for business-critical reporting.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">
+              <i class="fa-solid fa-layer-group"></i>
+              View My Work
+            </a>
+            <a class="btn secondary" href="assets/GajulaSirishaCVp.pdf" target="_blank" rel="noreferrer">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download Resume
+            </a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:gajulasirishaswamy1010@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <aside class="hero-card glass-card" data-aos="fade-left" data-aos-delay="160">
+          <div class="avatar-shell">
+            <img src="https://avatars.githubusercontent.com/u/190985321?v=4" alt="Sirisha Gajula" />
+          </div>
+          <div class="availability"><span></span> Open to Data Engineering roles</div>
+          <div class="hero-card-grid">
+            <div><strong>UNH</strong><span>M.S. Data Science</span></div>
+            <div><strong>2026</strong><span>Expected Graduation</span></div>
+            <div><strong>Azure</strong><span>ADF / Synapse / Databricks</span></div>
+            <div><strong>ML</strong><span>PyTorch / RAG / Forecasting</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="photo-panel glass-card" data-aos="fade-right">
+          <div class="photo-placeholder">
+            <span>SG</span>
+          </div>
+          <div class="education-mini">
+            <p>M.S. Data Science</p>
+            <strong>University of New Haven / May 2026</strong>
+            <p>B.Tech Computer Science & Engineering</p>
+            <strong>Malla Reddy Engineering College / May 2021</strong>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-up">
+          <p class="section-kicker">About</p>
+          <h2>Engineering data systems that are dependable, scalable, and decision-ready.</h2>
+          <p>
+            I bring a practical data engineering mindset from Accenture, where I worked across SSIS, Azure Data Factory, SQL Server, Control-M, Azure Synapse, C#, and Power BI. My work focuses on building trusted pipelines, automating validation, modernizing legacy ETL, and converting raw datasets into analytics that business teams can use with confidence.
+          </p>
+          <p>
+            Alongside data engineering, I work on applied ML and research projects involving PyTorch, MONAI, RAG, forecasting, and cloud data platforms.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card glass-card"><strong data-count="3" data-suffix="+">0+</strong><span>Years Experience</span></div>
+            <div class="stat-card glass-card"><strong data-count="2" data-suffix="M+">0M+</strong><span>Records Processed</span></div>
+            <div class="stat-card glass-card"><strong data-count="33">0</strong><span>Reporting Cycles</span></div>
+            <div class="stat-card glass-card"><strong data-count="20" data-suffix="+">0+</strong><span>Pipelines Migrated</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <p class="section-kicker">Skills</p>
+          <h2>Technical toolkit</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card" data-aos="fade-up">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Cloud & Data Platforms</h3>
+            <p>Azure Data Factory, Azure Synapse, Azure Databricks, ADLS Gen2, Snowflake, AWS S3</p>
+          </article>
+          <article class="skill-card glass-card" data-aos="fade-up" data-aos-delay="80">
+            <i class="fa-solid fa-diagram-project"></i>
+            <h3>Data Engineering</h3>
+            <p>ETL pipelines, Delta Lake, dbt, Control-M, orchestration, data validation, SLA monitoring</p>
+          </article>
+          <article class="skill-card glass-card" data-aos="fade-up" data-aos-delay="160">
+            <i class="fa-solid fa-code"></i>
+            <h3>Languages & Tools</h3>
+            <p>SQL, Python, PySpark, C#, GitHub Actions, Power BI, Tableau, Excel reporting</p>
+          </article>
+          <article class="skill-card glass-card" data-aos="fade-up" data-aos-delay="240">
+            <i class="fa-solid fa-brain"></i>
+            <h3>ML & AI</h3>
+            <p>PyTorch, MONAI, LightGBM, RAG, FAISS, LoRA, 3D U-Net, SegResNet</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <p class="section-kicker">Experience</p>
+          <h2>Timeline of impact</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>University of New Haven</h3>
+                  <p>Research Assistant</p>
+                </div>
+                <span>Jan 2026-Present</span>
+              </div>
+              <ul>
+                <li>Building a multi-stage deep learning pipeline for brain tumor segmentation using multi-modal MRI data.</li>
+                <li>Training 3D U-Net and SegResNet models with PyTorch and MONAI.</li>
+                <li>Conducting failure analysis around small-tumor recall and ROI prediction mismatch.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Accenture</h3>
+                  <p>Data Engineer</p>
+                </div>
+                <span>Aug 2021-Aug 2024</span>
+              </div>
+              <ul>
+                <li>Migrated 20+ SSIS pipelines to Azure Data Factory with CI/CD release practices.</li>
+                <li>Built C# and SQL validation utilities that reduced manual verification time by about 50%.</li>
+                <li>Optimized Azure Synapse ETL workflows and supported Power BI reporting for financial analytics.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>SmartInternz</h3>
+                  <p>Data Analytics Intern</p>
+                </div>
+                <span>Mar-Jun 2021</span>
+              </div>
+              <ul>
+                <li>Worked on analytics workflows using SQL, visualization, and applied data processing concepts.</li>
+                <li>Built project deliverables focused on extracting insights from structured datasets.</li>
+                <li>Strengthened foundations in reporting, dashboards, and data storytelling.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <p class="section-kicker">Projects</p>
+          <h2>Featured engineering work</h2>
+          <p class="section-subtitle">Filter by focus area to review the data platforms, ML systems, cloud observability, and analytics work behind the portfolio.</p>
+        </div>
+
+        <div class="project-filters" data-aos="fade-up" data-aos-delay="80" aria-label="Project filters">
+          <button class="filter-btn is-active" type="button" data-project-filter="all">All</button>
+          <button class="filter-btn" type="button" data-project-filter="data">Data Engineering</button>
+          <button class="filter-btn" type="button" data-project-filter="ml">ML & AI</button>
+          <button class="filter-btn" type="button" data-project-filter="cloud">Cloud</button>
+          <button class="filter-btn" type="button" data-project-filter="analytics">Analytics</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured glass-card" data-project-category="ml" data-aos="fade-up">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag ml">ML & AI</span><a href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer" aria-label="Brain Tumor Segmentation Pipeline GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>Brain Tumor Segmentation Pipeline</h3>
+              <p>Three-stage cascade framework for BraTS 2021 MRI segmentation with 3D U-Net detection, SegResNet sub-region segmentation, and Monte Carlo Dropout uncertainty.</p>
+              <div class="tag-row"><span>PyTorch</span><span>MONAI</span><span>Azure Databricks</span><span>3D U-Net</span><span>SegResNet</span><span>Python</span><span>NVIDIA A100</span></div>
+              <div class="metric-row"><span>0.9021 Dice Score</span><span>0.840 QU-BraTS</span><span>1,251 MRI Scans</span></div>
+            </div>
+          </article>
+
+          <article class="project-card featured glass-card" data-project-category="data cloud" data-aos="fade-up" data-aos-delay="80">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag data">Data Engineering / Cloud</span><a href="https://github.com/Siri-sha-27/Healthcare-Data-Engineering-Pipeline-Azure-Databricks" target="_blank" rel="noreferrer" aria-label="Healthcare Data Pipeline GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>Healthcare Data Pipeline</h3>
+              <p>End-to-end PySpark pipeline on Azure Databricks processing ~3.9M Synthea clinical records using Medallion Architecture.</p>
+              <div class="tag-row"><span>PySpark</span><span>Azure Databricks</span><span>Delta Lake</span><span>ADLS Gen2</span><span>Medallion Architecture</span><span>Python</span></div>
+              <div class="metric-row"><span>3.9M Records</span><span>900% Volume Scale</span><span>55% Faster Queries</span></div>
+            </div>
+          </article>
+
+          <article class="project-card featured glass-card" data-project-category="ml" data-aos="fade-up" data-aos-delay="160">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag ml">ML & AI</span><a href="https://github.com/Siri-sha-27/EuroSAT-ViT-LoRA" target="_blank" rel="noreferrer" aria-label="ViT PEFT LoRA GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>ViT PEFT: Satellite Image Classification with LoRA</h3>
+              <p>Vision Transformer fine-tuned with LoRA on EuroSAT, reducing trainable parameters while maintaining high classification accuracy.</p>
+              <div class="tag-row"><span>PyTorch</span><span>Hugging Face</span><span>LoRA/PEFT</span><span>Vision Transformer</span><span>EuroSAT</span><span>Gradio</span></div>
+              <div class="metric-row"><span>97.98% Accuracy</span><span>194x Parameter Reduction</span><span>27K Images</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-project-category="data cloud" data-aos="fade-up">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag cloud">Data Engineering / Cloud</span><a href="https://github.com/Siri-sha-27/nyc-taxi-etl-dbt-snowflake" target="_blank" rel="noreferrer" aria-label="Scalable Data Warehouse Pipeline GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>Scalable Data Warehouse Pipeline</h3>
+              <p>Medallion ELT pipeline in Snowflake processing 2.9M NYC taxi trips enriched with weather API data.</p>
+              <div class="tag-row"><span>Snowflake</span><span>dbt</span><span>GitHub Actions</span><span>CI/CD</span><span>Python</span><span>Medallion Architecture</span></div>
+              <div class="metric-row"><span>2.9M Records</span><span>21 Quality Tests</span><span>Full CI/CD</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-project-category="data" data-aos="fade-up" data-aos-delay="80">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag data">Data Engineering</span><a href="https://github.com/Siri-sha-27/Real-time-stocks-modern-data-stack" target="_blank" rel="noreferrer" aria-label="Real-Time Streaming Platform GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>Real-Time Streaming Platform</h3>
+              <p>Event-driven stock market streaming platform with Kafka ingestion, Airflow DAGs, dbt transformations, and Power BI DirectQuery dashboards.</p>
+              <div class="tag-row"><span>Apache Kafka</span><span>Apache Airflow</span><span>Snowflake</span><span>dbt</span><span>MinIO</span><span>Docker</span><span>Power BI</span></div>
+              <div class="metric-row"><span>Real-Time Ingestion</span><span>Event-Driven</span><span>DirectQuery BI</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-project-category="ml" data-aos="fade-up" data-aos-delay="160">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag ml">ML & AI</span><a href="https://github.com/Siri-sha-27/financial-rag-project" target="_blank" rel="noreferrer" aria-label="Financial RAG System GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>Financial RAG System for Hallucination Detection</h3>
+              <p>Retrieval-Augmented Generation pipeline benchmarking Llama 3.1, Qwen3, and Allam across financial document datasets.</p>
+              <div class="tag-row"><span>Python</span><span>FAISS</span><span>Hugging Face</span><span>LLaMA 3.1</span><span>Qwen3</span><span>Streamlit</span><span>RAG</span></div>
+              <div class="metric-row"><span>30+ Datasets</span><span>18% Hallucination Reduction</span><span>3 LLMs Benchmarked</span></div>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-project-category="cloud analytics" data-aos="fade-up" data-aos-delay="240">
+            <div class="project-body">
+              <div class="project-topline"><span class="category-tag analytics">Cloud / Analytics</span><a href="https://github.com/Siri-sha-27/Aws-sla-freshness-dashboard" target="_blank" rel="noreferrer" aria-label="SLA Monitoring Platform GitHub"><i class="fa-brands fa-github"></i></a></div>
+              <h3>SLA Freshness & Business Monitoring Platform</h3>
+              <p>Serverless AWS data observability system monitoring 90K+ records across multi-frequency pipelines with automated SLA breach alerts.</p>
+              <div class="tag-row"><span>AWS Lambda</span><span>S3</span><span>Athena</span><span>CloudWatch</span><span>Python</span><span>SQL</span><span>Streamlit</span></div>
+              <div class="metric-row"><span>90K+ Records</span><span>60% Less Manual Work</span><span>50% Faster Detection</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <div class="resume-header" data-aos="fade-up">
+          <div>
+            <p class="section-kicker">Resume</p>
+            <h2>Sirisha Gajula</h2>
+            <p>Data Engineer / Cloud Data Platforms / ML Pipeline Support</p>
+          </div>
+          <a class="btn primary resume-download" href="assets/GajulaSirishaCVp.pdf" download>
+            <i class="fa-solid fa-download"></i>
+            Download Resume (PDF)
+          </a>
+        </div>
+
+        <div class="resume-layout">
+          <aside class="resume-sidebar glass-card" data-aos="fade-right">
+            <section class="resume-block">
+              <h3>Contact</h3>
+              <ul class="resume-contact">
+                <li><i class="fa-solid fa-location-dot"></i><span>West Haven, CT</span></li>
+                <li><i class="fa-solid fa-phone"></i><a href="tel:+12168940591">+1 (216)-894-0591</a></li>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:gajulasirishaswamy1010@gmail.com">gajulasirishaswamy1010@gmail.com</a></li>
+                <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><i class="fa-solid fa-globe"></i><a href="https://sirishagajula.netlify.app" target="_blank" rel="noreferrer">sirishagajula.netlify.app</a></li>
+              </ul>
+            </section>
+
+            <section class="resume-block">
+              <h3>Skills</h3>
+              <div class="skill-group">
+                <h4>Cloud & Data Platforms</h4>
+                <div class="resume-pills"><span>AWS S3</span><span>EC2</span><span>Lambda</span><span>Athena</span><span>Glue</span><span>Azure Data Factory</span><span>Azure Synapse</span><span>Snowflake</span><span>Azure Databricks</span></div>
+              </div>
+              <div class="skill-group">
+                <h4>Pipeline & Orchestration</h4>
+                <div class="resume-pills"><span>Apache Airflow</span><span>Apache Kafka</span><span>dbt</span><span>SSIS</span><span>Control-M</span><span>Docker</span><span>GitHub Actions</span><span>Azure DevOps</span></div>
+              </div>
+              <div class="skill-group">
+                <h4>Languages & Databases</h4>
+                <div class="resume-pills"><span>Python</span><span>pandas</span><span>NumPy</span><span>PyTorch</span><span>PySpark</span><span>SQL</span><span>T-SQL</span><span>C#</span><span>SQL Server</span><span>Spark SQL</span><span>Delta Lake</span></div>
+              </div>
+              <div class="skill-group">
+                <h4>Data Practices</h4>
+                <div class="resume-pills"><span>ETL/ELT Design</span><span>Data Validation</span><span>Data Modeling</span><span>Batch Workflows</span><span>Streaming Workflows</span><span>ML Pipeline Support</span><span>Power BI</span><span>Tableau</span><span>Streamlit</span></div>
+              </div>
+            </section>
+
+            <section class="resume-block">
+              <h3>Certifications</h3>
+              <div class="resume-cert-list">
+                <article class="mini-cert verified-cert" style="--issuer:#05C3DD"><span>DC</span><div><strong>Associate Data Engineer</strong><small>DataCamp / April 2026</small></div><em><i class="fa-solid fa-lock"></i> Verified</em></article>
+                <article class="mini-cert verified-cert" style="--issuer:#76B900"><span>N</span><div><strong>Building LLM Application with Prompt Engineering</strong><small>NVIDIA / April 2025</small></div><em><i class="fa-solid fa-lock"></i> Verified</em></article>
+                <article class="mini-cert verified-cert" style="--issuer:#0077B5"><span>in</span><div><strong>Cloud NoSQL for SQL Professionals</strong><small>LinkedIn Learning / February 2025</small></div><em><i class="fa-solid fa-lock"></i> Verified</em></article>
+                <article class="mini-cert verified-cert" style="--issuer:#0077B5"><span>in</span><div><strong>SQL Tips and Tricks for Data Science</strong><small>LinkedIn Learning / February 2025</small></div><em><i class="fa-solid fa-lock"></i> Verified</em></article>
+                <article class="mini-cert verified-cert" style="--issuer:#054ADA"><span>IBM</span><div><strong>Data Science Methodology</strong><small>IBM / Coursera Certificate</small></div><em><i class="fa-solid fa-lock"></i> Verified</em></article>
+              </div>
+            </section>
+          </aside>
+
+          <div class="resume-main" data-aos="fade-left">
+            <section class="resume-panel glass-card">
+              <h3>Professional Summary</h3>
+              <p>Data Engineer with 3+ years of enterprise experience designing and operating end-to-end data solutions on Azure, building scalable ETL/ELT and streaming pipelines, and implementing Medallion lakehouse architectures (Bronze-Silver-Gold). Proven expertise in migrating legacy SSIS and Control-M workflows to Azure Data Factory, improving scalability, monitoring, and deployment efficiency. Strong background in data quality validation and supporting high-stakes executive reporting in Power BI. Currently advancing skills in Data Science and machine learning to build data platforms for predictive analytics.</p>
+            </section>
+
+            <section class="resume-panel glass-card">
+              <h3>Professional Experience</h3>
+              <div class="resume-timeline">
+                <article class="resume-item">
+                  <div class="resume-item-head">
+                    <div><h4>University of New Haven</h4><p>Graduate Research Assistant - Data & ML Engineer</p></div>
+                    <span>Jan 2026 - Present</span>
+                  </div>
+                  <ul>
+                    <li>Built an end-to-end 3D MRI preprocessing and segmentation pipeline on Azure Databricks using PyTorch and MONAI, processing 1,251 multi-modal scans (~8M voxels/scan) with normalization, patch-based sampling, and stratified dataset preparation.</li>
+                    <li>Implemented a detection-segmentation cascade achieving ~95% tumor localization recall and ~0.81 mean Dice score on 3D U-Net segmentation, demonstrating production-ready ML pipeline support on GPU-backed cloud compute.</li>
+                  </ul>
+                </article>
+
+                <article class="resume-item">
+                  <div class="resume-item-head">
+                    <div><h4>Accenture</h4><p>Advanced Application Engineering Analyst - Data Engineer</p></div>
+                    <span>Aug 2021 - Aug 2024 / Telangana, India</span>
+                  </div>
+                  <ul>
+                    <li>Engineered and operated end-to-end monthly financial ETL pipelines processing 2M+ records using SSIS and SQL Server, delivering 33+ consecutive error-free reporting cycles consumed in executive financial review meetings.</li>
+                    <li>Managed Control-M batch orchestration, enforced schema standards, and developed C# reconciliation utilities to ensure production-grade data integrity under strict SLA deadlines following CI/CD practices.</li>
+                    <li>Led migration of 20+ legacy pipelines to Azure Data Factory and Azure Synapse, reducing manual intervention by 80%; optimized batch ingestion workflows and delivered Power BI dashboards for executive revenue and variance reporting.</li>
+                  </ul>
+                </article>
+
+                <article class="resume-item">
+                  <div class="resume-item-head">
+                    <div><h4>SmartInternz (by SmartBridge)</h4><p>Data Analyst Virtual Intern</p></div>
+                    <span>Mar 2021 - Jun 2021 / Telangana, India</span>
+                  </div>
+                  <ul>
+                    <li>Analyzed India's COVID-19 dataset using SQL Server to generate state-wise insights on confirmed, recovered, and death cases; cleaned and transformed data and created SQL views for structured reporting.</li>
+                    <li>Built an interactive Tableau dashboard with choropleth maps, time-series trends, and state-level drill-down analysis enabling dynamic filtering and comparative visualizations.</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="resume-panel glass-card">
+              <h3>Education</h3>
+              <div class="education-list">
+                <article><h4>Master of Science, Data Science</h4><p>University of New Haven - West Haven, CT</p><span>Expected May 2026</span></article>
+                <article><h4>Bachelor of Technology, Computer Science and Engineering</h4><p>Malla Reddy Engineering College - Telangana, India</p><span>May 2021</span></article>
+              </div>
+            </section>
+
+            <section class="resume-panel glass-card">
+              <h3>Project Links</h3>
+              <div class="resume-project-links">
+                <a href="#projects">Healthcare Data Pipeline</a>
+                <a href="#projects">Scalable Data Warehouse Pipeline</a>
+                <a href="#projects">Real-Time Streaming Platform</a>
+                <a href="#projects">SLA Freshness & Monitoring Platform</a>
+                <a href="#projects">Brain Tumor Segmentation</a>
+                <a href="#projects">Financial RAG System</a>
+                <a href="#projects">ViT PEFT with LoRA</a>
+              </div>
+            </section>
+
+            <section class="resume-panel glass-card">
+              <h3>Verified Certifications</h3>
+              <div class="cert-grid">
+                <article class="cert-card verified-cert" style="--issuer:#05C3DD">
+                  <div class="cert-top"><span class="cert-category">Data Engineering</span><i class="fa-solid fa-lock"></i></div>
+                  <span class="issuer-mark">DC</span>
+                  <h4>Associate Data Engineer</h4>
+                  <p>DataCamp</p>
+                  <small>April 2026</small>
+                  <small>Credential ID: DEA0013968615023</small>
+                  <em>Verified</em>
+                </article>
+                <article class="cert-card verified-cert" style="--issuer:#76B900">
+                  <div class="cert-top"><span class="cert-category">AI / LLMs</span><i class="fa-solid fa-lock"></i></div>
+                  <span class="issuer-mark">N</span>
+                  <h4>Building LLM Application with Prompt Engineering</h4>
+                  <p>NVIDIA</p>
+                  <small>April 2025</small>
+                  <small>Credential ID: LtYonX3JQDq5N6-H2mulTw</small>
+                  <em>Verified</em>
+                </article>
+                <article class="cert-card verified-cert" style="--issuer:#0077B5">
+                  <div class="cert-top"><span class="cert-category">Cloud & Databases</span><i class="fa-solid fa-lock"></i></div>
+                  <span class="issuer-mark">in</span>
+                  <h4>Cloud NoSQL for SQL Professionals</h4>
+                  <p>LinkedIn Learning</p>
+                  <small>February 2025</small>
+                  <em>Verified</em>
+                </article>
+                <article class="cert-card verified-cert" style="--issuer:#0077B5">
+                  <div class="cert-top"><span class="cert-category">SQL</span><i class="fa-solid fa-lock"></i></div>
+                  <span class="issuer-mark">in</span>
+                  <h4>SQL Tips and Tricks for Data Science</h4>
+                  <p>LinkedIn Learning</p>
+                  <small>February 2025</small>
+                  <em>Verified</em>
+                </article>
+                <article class="cert-card verified-cert" style="--issuer:#054ADA">
+                  <div class="cert-top"><span class="cert-category">Data Science</span><i class="fa-solid fa-lock"></i></div>
+                  <span class="issuer-mark">IBM</span>
+                  <h4>Data Science Methodology</h4>
+                  <p>IBM / Coursera</p>
+                  <small>Coursera Course Certificate</small>
+                  <em>Verified</em>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy" data-aos="fade-right">
+          <p class="section-kicker">Contact</p>
+          <h2>Let's build reliable data systems together.</h2>
+          <p>Open to data engineering, cloud data platform, analytics engineering, and applied ML opportunities.</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/sirisha-gajula-b6635b200/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Siri-sha-27" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="mailto:gajulasirishaswamy1010@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contactForm" data-aos="fade-left">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+
+          <button class="btn primary" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Sirisha Gajula</p>
+      <p>Data Engineer / ML Practitioner / Cloud Architect</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
