@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (window.Typed) {
     new Typed("#typedRole", {
-      strings: ["Data Engineer", "ML Practitioner", "Cloud Architect"],
+      strings: ["Data Engineer"],
       typeSpeed: 58,
       backSpeed: 34,
       backDelay: 1250,
